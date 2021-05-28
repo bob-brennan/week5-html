@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: arial;
+}
+.container {
+    width: 80%;
+    height: 100vh;
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+}
+
+.container .game-box {
+    margin: auto;
+    width: 100%;
+    padding: 5px;
+    padding-top: 40px;
+    border: 2.5px solid brown;
+    border-radius: 10px;
+    position: relative
+    
+}
+.container .game-box .title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5px;
+    background-color: brown;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    transform: translate(50%, -50%);
+    border-radius: 10px;
+    color: antiquewhite;
+    box-shadow: 4px 4px 14px black
+
+}
+
+.container .game-box .info {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: chocolate;
+    width: 51%;
+    position: relative;
+
+    transform: translate(50%, -50%);
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
+.container .game-box .board {
+    width: 70%;
+    float: left;
+}
+
+@media (max-width: 768px) {
+    .container .game-box .board {
+        width: 100%;
+        margin-bottom: 30px
+    }
+}
+
+.container .game-box .board > div {
+    width: 31.3333%;
+    height: 100px;
+    float: left;
+    background-color: darkmagenta;
+    margin: 1%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color: antiquewhite;
+    cursor: pointer;
+    
+}
+
+.container .game-box .board > div:hover {
+    background-color: blue;
+    transition: .4s
+}
+
+.container .game-box .infos-box {
+    width: 30%;
+    float: left;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .container .game-box .infos-box {
+        width: 100%;
+    }
+}
+.container .game-box .infos-box label {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: brown;
+    border-radius: 10px;
+    color: antiquewhite;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.container .game-box .infos-box button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    background-color: chocolate;
+    color: antiquewhite;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: .8
+}
+
+.container .game-box .infos-box button:hover {
+    opacity: 1;
+    transition: .5s;
+    box-shadow: 4px 4px 14px #000000a6
+}
+
+.container .game-box .infos-box .score-box {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 50px;
+    opacity: .8;
+    margin-bottom: 40px;
+}
+
+.container .game-box .infos-box .score-box > div {
+    width: 33.3333%;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    color: antiquewhite;
+    font-weight: bold;
+    background-color: chocolate
+}
+
+.clearfix {
+    clear: both;
+}
+
+.bg-color {
+    background-color: blue !important
+}
